@@ -7,11 +7,11 @@ import java.util.List;
 public interface IUniversiteService {
     List<Universite>  retrieveAllUniversite();
 
-    Universite addReservation(Universite u);
+    Universite addUniversite(Universite u);
 
-    Universite updateReservation( Universite u);
+    Universite updateUniversite( Universite u);
 
-    Universite retrieveReservation(Long idUniversite);
+    Universite retrieveUniversite(Long idUniversite);
 
-    void removeReservation(Long idUniversite);
+    void removeUniversite(Long idUniversite);
 }

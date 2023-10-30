@@ -24,22 +24,22 @@ public class UniversiteService implements IUniversiteService {
     }
 
     @Override
-    public Universite addReservation(Universite u) {
+    public Universite addUniversite(Universite u) {
         return universiteRepository.save(u);
     }
 
     @Override
-    public Universite updateReservation(Universite u) {
+    public Universite updateUniversite(Universite u) {
         return universiteRepository.save(u);
     }
 
     @Override
-    public Universite retrieveReservation(Long idUniversite) {
+    public Universite retrieveUniversite(Long idUniversite) {
         return universiteRepository.findById(idUniversite).get();
     }
 
     @Override
-    public void removeReservation(Long idUniversite) {
+    public void removeUniversite(Long idUniversite) {
         universiteRepository.deleteById(idUniversite);
     }
 }
